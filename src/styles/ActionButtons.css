@@ -1,0 +1,38 @@
+.home-actions {
+  position: relative;
+  z-index: 100;
+}
+
+.action-btn {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.action-btn:nth-of-type(1):not(.move-top-left):not(.hidden-btn) {
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.action-btn:nth-of-type(2):not(.move-top-left):not(.hidden-btn) {
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.move-top-left {
+  top: 1rem !important;
+  left: 1rem !important;
+  transform: none !important;
+}
+
+.hidden-btn {
+  display: none !important;
+}

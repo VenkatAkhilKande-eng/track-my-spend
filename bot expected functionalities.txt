@@ -1,0 +1,94 @@
+bot expected functionalities
+
+* user ready options and also options that include application functionalities so that user can simply use prompts to setup and do activities
+* bot should more focused on the expense tracker app and its functionalities rather than talking in general
+* it should greet the user as soon as he logins 
+
+Other app functionalities
+
+* try setting alerts so that he gets a text message 
+* try adding more alert options, like in the way adding new options, new options in setting up alerts
+* see on notification red badge such that it should pop up the red badge as soon as if there is any notification exists
+
+✅ Here Are Powerful & Practical Feature Ideas to Enhance NotificationsBell.jsx:
+🔔 1. Notification Types & Icons
+Add categorization to alerts:
+
+🔴 Critical: Spending exceeded by large margin (e.g., >150% of threshold)
+
+🟡 Warning: Slightly over budget (e.g., >100% but <150%)
+
+🟢 Info: Budget approaching threshold (e.g., 80–100%)
+
+Benefit: Visual prioritization for users.
+
+🗓️ 2. Schedule-Based Alerts
+Allow users to set:
+
+Recurring monthly limit warnings
+
+Weekly expense summaries
+
+js
+Copy
+Edit
+Schedule: 
+[ ] Weekly summary
+[ ] End-of-month spending report
+Send notification: “🗓️ Your weekly spending is $432.75. Top: Groceries.”
+
+📉 3. Spike Detection
+Detect sudden spending surges and notify:
+
+"⚠️ Your spending in 'Takeout' spiked 250% compared to last week."
+
+Uses: calculate % change from previous time period per category.
+
+🔄 4. Editable Alerts
+Right now, users can delete alerts. But allow:
+
+✏️ Inline editing (change threshold or subcategory)
+
+Save changes instantly with a backend update
+
+🧠 5. AI-generated Alert Suggestions
+Let chatbot or system suggest:
+
+“Would you like to set an alert for 'Coffee'? You've spent $92 this month.”
+
+Uses pattern recognition to recommend new alerts.
+
+🧾 6. Alert History / Log
+Allow users to toggle past alerts they've received:
+
+“View past exceeded notifications for this month”
+
+This can be a tab under notifications.
+
+📊 7. Smart Summarized View
+For multiple exceeded alerts:
+
+Combine similar messages into 1 smart message:
+
+“⚠️ You've exceeded thresholds in 3 categories: Food, Transport, and Entertainment.”
+
+Expandable for full details.
+
+📍 8. Geo-tagged Notifications (if GPS/spending source available)
+“⚠️ Spent $120 on Restaurants in Austin last weekend.”
+
+(Not immediately feasible unless integrated with a GPS-enabled receipt scanner or card data.)
+
+🎯 9. Goal-based Reminders
+Let users set targets, not just thresholds:
+
+“🎯 You’ve reached 60% of your savings goal for this month!”
+
+Alerts them when they’re progressing toward positive goals too.
+
+📅 10. Snooze or Mute Alerts
+Allow users to snooze an alert for a time:
+
+“Remind me later”
+
+“Don’t alert for this category this week”

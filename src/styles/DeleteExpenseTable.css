@@ -1,0 +1,74 @@
+.delete-table-container { 
+  margin-top: 5rem;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+
+.delete-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 14px;
+  font-size: 1rem;
+  table-layout: relative;
+}
+
+.delete-table thead {
+  background-color: #fafafa;
+}
+
+.delete-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #ccc;
+}
+
+.delete-table td {
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-left: none;
+  border-right: none;
+  transition: background-color 0.3s ease;
+  overflow-wrap: break-word;
+}
+
+.delete-table tr:hover td {
+  background-color: #f7f7f7;
+}
+
+.delete-table td:first-child {
+  border-left: 2px solid #e1e1e1;
+  border-radius: 10px 0 0 10px;
+}
+
+.delete-table td:last-child {
+  border-right: 2px solid #e1e1e1;
+  border-radius: 0 10px 10px 0;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.delete-btn:hover {
+  background-color: #d90000;
+  transform: scale(1.05);
+}

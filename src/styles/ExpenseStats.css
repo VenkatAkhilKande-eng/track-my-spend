@@ -1,0 +1,188 @@
+.table-with-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+
+.table-container {
+  position: absolute;
+  top: 70%;
+  left: 2rem;
+  transform: translateY(-50%);
+  width: 90%;
+  max-width: 700px;
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  z-index: 300;
+  flex: 1 1 600px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.table-container th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #aaa;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.pagination .active-page {
+  background-color: black;
+  color: white;
+}
+
+.summary-box,
+.category-summary {
+  position: absolute;
+  width: 260px;
+  max-width: 90vw;
+  height: fit-content;
+  padding: 1.5rem 1rem;
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: bold;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.summary-box {
+  top: 16rem;
+  right: 10rem;
+}
+
+.category-summary {
+  top: 31rem;
+  right: 10rem;
+  background-color: #f0f8ff;
+  border-color: #b9b9b9;
+  animation-delay: 0.1s;
+}
+
+.summary-box h3,
+.category-summary h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  color: black;
+}
+
+.summary-box p,
+.category-summary p {
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.back-btn {
+  position: absolute;
+  top: 9rem; /* directly below .filter-label which is at top: 6rem */
+  left: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+  transform: translateY(0);
+  animation: fadeInFilter 0.5s ease-in-out forwards;
+}
+
+.back-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.filter-label {
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+  transform: translateY(0);
+  animation: fadeInFilter 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInFilter {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.chart-container {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  width: 600px;
+}
