@@ -1,4 +1,4 @@
-# Logs
+# === Logs ===
 logs
 *.log
 npm-debug.log*
@@ -7,18 +7,48 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# === Node / Frontend build ===
+node_modules/
+dist/
+dist-ssr/
 *.local
 
-# Editor directories and files
+# Vite dependency pre-bundling cache (explicit, though covered by node_modules/ above)
+.vite/
+
+# === Environment variables ===
+.env
+.env.local
+.env.*.local
+
+# === Python (backend) ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# === Databases ===
+*.db
+*.sqlite
+*.sqlite3
+
+# === App-generated data ===
+expenses.csv
+
+# === Editor directories and files ===
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+desktop.ini
