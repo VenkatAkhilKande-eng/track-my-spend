@@ -115,7 +115,7 @@ This is a personal mini-project, but feedback and feature ideas are always welco
 
 ## 📄 License
 
-This project is currently unlicensed / personal use. Update this section if you decide to open-source it.
+private project
 
 ---
 
